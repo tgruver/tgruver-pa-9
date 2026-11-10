@@ -1,0 +1,192 @@
+Test case 1: Reading the movies from the file
+62423 movies loaded from the file "movies.csv"
+----------------------------------------------------------------------------------------------------
+
+Test case 2: (Searching by ID: successful)
+Finding movie with ID 101
+ Movie found:
+65              Bio-Dome (1996)                                         Comedy                                          4663            2.4
+----------------------------------------------------------------------------------------------------
+
+Test case 3: (Searching by ID: fail)
+
+Finding movie with ID 99999999
+ Movie not found: null
+----------------------------------------------------------------------------------------------------
+
+Test case 4: (Searching by genre: successful)
+There are 7807 movies with genre "Drama"
+First ten movies of the list: 
+14              Nixon (1995)                                            Drama                                           5509            3.4
+26              Othello (1995)                                          Drama                                           2549            3.6
+31              Dangerous Minds (1995)                                  Drama                                           9106            3.2
+40              Cry the Beloved Country (1995)                          Drama                                           797             3.6
+43              Restoration (1995)                                      Drama                                           2308            3.4
+54              The Big Green (1995)                                    Drama                                           919             2.8
+55              Georgia (1995)                                          Drama                                           851             3.2
+57              Home for the Holidays (1995)                            Drama                                           2236            3.3
+58              The Postman                                             Drama                                           10483           4.0
+59              The Confessional                                        Drama                                           181             3.6
+----------------------------------------------------------------------------------------------------
+
+Test case 5: (Searching by genre: fail)
+No movies found with genre "Unknown"
+----------------------------------------------------------------------------------------------------
+
+Test case 6: (Searching by rating)
+There are 595 movies with rating = 4.5
+First ten movies of the list: 
+159817          Planet Earth (2006)                                     Documentary                                     1747            4.5
+171011          Planet Earth II (2016)                                  Documentary                                     1124            4.5
+126967          Letter from Siberia (1957)                              (no genres listed)                              7               4.5
+184393          The Criminal Excellency Fund (2018)                     Action|Comedy|Crime                             6               4.5
+102672          New York: A Documentary Film (1999)                     Documentary                                     6               4.5
+103629          Limuzins Janu nakts krasa (1981)                        Comedy|Drama                                    6               4.5
+104119          The Forsyte Saga (1967)                                 Drama                                           6               4.5
+136892          Dreams with Sharp Teeth (2008)                          Documentary                                     5               4.5
+139096          Unmatched (2010)                                        Documentary                                     5               4.5
+140391          Pistol: The Birth of a Legend (1991)                    Children|Drama                                  5               4.5
+----------------------------------------------------------------------------------------------------
+
+Test case 7: (Searching by rating: fail)
+There are no movies with rating 7.5
+----------------------------------------------------------------------------------------------------
+
+Test case 8: (Searching by title (successful))
+There is a movie with the title "Heist (2015)"
+----------------------------------------------------------------------------------------------------
+
+Test case 9: (Searching by title (fail))
+There is no movie with the title "Unknown Title"
+----------------------------------------------------------------------------------------------------
+
+Test case 10: (getting the list of movie genres)
+There are 4828 movie genres
+----------------------------------------------------------------------------------------------------
+
+Test case 11: (Top n movies by genre)
+Top twenty movies with genre Comedy: 
+156309          It Ain't Hay (1943)                                     Comedy                                          2               5.0
+135232          Jailbait Babysitter (1977)                              Comedy                                          1               5.0
+135338          Letto a Tre Piazze (1961)                               Comedy                                          1               5.0
+135350          Toto vs the Four (1963)                                 Comedy                                          1               5.0
+136734          What Now (2015)                                         Comedy                                          1               5.0
+137194          Meeting Spencer (2010)                                  Comedy                                          1               5.0
+137359          Detroit Unleaded (2013)                                 Comedy                                          1               5.0
+138142          Friended to Death (2014)                                Comedy                                          1               5.0
+139279          Slow Jam King (2004)                                    Comedy                                          1               5.0
+139295          The Movie Out Here (2012)                               Comedy                                          1               5.0
+139952          Torno a vivere da solo (2008)                           Comedy                                          1               5.0
+141064          Uomo e galantuomo (1975)                                Comedy                                          1               5.0
+146946          The Hardy Bucks Movie (2013)                            Comedy                                          1               5.0
+148264          Pastor Shepherd (2010)                                  Comedy                                          1               5.0
+149210          La Cambiale (1959)                                      Comedy                                          1               5.0
+151989          The Thorn (1971)                                        Comedy                                          1               5.0
+152627          Balls to the Wall (2011)                                Comedy                                          1               5.0
+154686          ...E fuori nevica! (2014)                               Comedy                                          1               5.0
+155629          You Must Be Joking (2014)                               Comedy                                          1               5.0
+156307          Pardon My Sarong (1942)                                 Comedy                                          1               5.0
+----------------------------------------------------------------------------------------------------
+
+Test case 12: (Top movies by votes and rating)
+There are 130 movies with more than 10,000 votes and a rating higher than 4.0
+Top ten movies of the list: 
+318             The Shawshank Redemption (1994)                         Drama                                           81482           4.4
+50              The Usual Suspects (1995)                               Crime|Mystery|Thriller                          55366           4.3
+858             The Godfather (1972)                                    Drama                                           52498           4.3
+1221            The Godfather: Part II (1974)                           Drama                                           34188           4.3
+2019            Seven Samurai (Shichinin no samurai) (1954)             Action|Adventure|Drama                          13367           4.3
+296             Pulp Fiction (1994)                                     Comedy|Crime|Drama|Thriller                     79672           4.2
+527             Schindler's List (1993)                                 Drama|War                                       60411           4.2
+593             The Silence of the Lambs (1991)                         Drama                                           74127           4.2
+750             Dr. Strangelove (1964)                                  Comedy|War                                      26714           4.2
+904             Rear Window (1954)                                      Mystery|Thriller                                20162           4.2
+----------------------------------------------------------------------------------------------------
+
+Test case 13: (Custom sorting using quickSort, radixSort, and bucketSort)
+Sorted list of movies for genre Drama (Top 10)
+118268          Borrowed Time (2012)                                    Drama                                           3               5.0
+179731          Sound of Christmas (2016)                               Drama                                           3               5.0
+202936          ReMoved (2013)                                          Drama                                           2               5.0
+161944          The Last Brickmaker in America (2001)                   Drama                                           2               5.0
+143422          2 (2007)                                                Drama                                           2               5.0
+140377          About Sarah                                             Drama                                           2               5.0
+137853          El camino (2008)                                        Drama                                           2               5.0
+130528          Henry VIII and His Six Wives (1972)                     Drama                                           1               5.0
+129443          Thank You a Lot (2014)                                  Drama                                           1               5.0
+126116          Dolls and Angels (2008)                                 Drama                                           1               5.0
+----------------------------------------------------------------------------------------------------
+Sorted list of movies for genre Comedy (Top 10)
+156309          It Ain't Hay (1943)                                     Comedy                                          2               5.0
+130902          The Foursome (2007)                                     Comedy                                          1               5.0
+125197          That’s What She Said (2012)                             Comedy                                          1               5.0
+122005          White T (2013)                                          Comedy                                          1               5.0
+118995          The Two Firefighters (1968)                             Comedy                                          1               5.0
+117859          Fugly! (2013)                                           Comedy                                          1               5.0
+116931          One Night in the Tropics (1940)                         Comedy                                          1               5.0
+96799           Puckoon (2002)                                          Comedy                                          1               5.0
+207259          Thamizh Padam (2010)                                    Comedy                                          1               5.0
+206210          Captain Hagen's Bed & Breakfast (2019)                  Comedy                                          1               5.0
+----------------------------------------------------------------------------------------------------
+
+Test case 14: (Hash Maps performance)
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           131072          0.476           6384            [(1, 49655), (2, 6384)]
+moviesByGenre   4828            16384           0.295           632             [(1, 3617), (2, 528), (3, 49), (4, 2)]
+moviesByRating  46              16384           0.003           43              [(8, 1), (9, 1), (29, 1)]
+
+Test case 15: (Hash Maps performance: Different initial capacities)
+----------------------------------------------------------------------------------------------------
+Initial Capacity: 10000, 2000, 20
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           131072          0.476           6384            [(1, 49655), (2, 6384)]
+moviesByGenre   4828            8192            0.589           1179            [(1, 2663), (2, 820), (3, 141), (4, 23), (5, 2)]
+moviesByRating  46              64              0.719           43              [(8, 1), (9, 1), (29, 1)]
+----------------------------------------------------------------------------------------------------
+Initial Capacity: 20000, 4000, 40
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           131072          0.476           6384            [(1, 49655), (2, 6384)]
+moviesByGenre   4828            8192            0.589           1179            [(1, 2663), (2, 820), (3, 141), (4, 23), (5, 2)]
+moviesByRating  46              64              0.719           43              [(8, 1), (9, 1), (29, 1)]
+----------------------------------------------------------------------------------------------------
+Initial Capacity: 40000, 8000, 80
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           131072          0.476           6384            [(1, 49655), (2, 6384)]
+moviesByGenre   4828            8192            0.589           1179            [(1, 2663), (2, 820), (3, 141), (4, 23), (5, 2)]
+moviesByRating  46              128             0.359           43              [(8, 1), (9, 1), (29, 1)]
+----------------------------------------------------------------------------------------------------
+Initial Capacity: 80000, 16000, 160
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           131072          0.476           6384            [(1, 49655), (2, 6384)]
+moviesByGenre   4828            16384           0.295           632             [(1, 3617), (2, 528), (3, 49), (4, 2)]
+moviesByRating  46              256             0.180           43              [(8, 1), (9, 1), (29, 1)]
+----------------------------------------------------------------------------------------------------
+
+Test case 16: (Hash Maps performance: Different initial load factors)
+----------------------------------------------------------------------------------------------------
+Load Factor: 0.5
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           131072          0.476           6384            [(1, 49655), (2, 6384)]
+moviesByGenre   4828            16384           0.295           632             [(1, 3617), (2, 528), (3, 49), (4, 2)]
+moviesByRating  46              128             0.359           43              [(8, 1), (9, 1), (29, 1)]
+----------------------------------------------------------------------------------------------------
+Load Factor: 0.75
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           131072          0.476           6384            [(1, 49655), (2, 6384)]
+moviesByGenre   4828            8192            0.589           1179            [(1, 2663), (2, 820), (3, 141), (4, 23), (5, 2)]
+moviesByRating  46              64              0.719           43              [(8, 1), (9, 1), (29, 1)]
+----------------------------------------------------------------------------------------------------
+Load Factor: 1.125
+Performance of the three hashmaps
+HashMap         Size            Capacity        LoadFactor      Collisions      Bucket Size Distribution
+moviesByID      62423           65536           0.952           18460           [(1, 28289), (2, 13055), (3, 2452), (4, 167)]
+moviesByGenre   4828            8192            0.589           1179            [(1, 2663), (2, 820), (3, 141), (4, 23), (5, 2)]
+moviesByRating  46              64              0.719           43              [(8, 1), (9, 1), (29, 1)]
+----------------------------------------------------------------------------------------------------
